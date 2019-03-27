@@ -21,9 +21,15 @@ class Gallery extends Component {
                                                 alt=" book cover"
                                             />
                                             <div className="bookTitle">
-                                               <p>{title}</p>
-                                               <p className="description">{description}</p>
-                                            </div>
+                                                   <p>
+                                                     {title} <br/><i>{authors !== undefined ? `By: ${authors}` : ''}</i>
+                                                   </p>
+                                                </div>
+                                               <div className="description">
+                                                   <p>
+                                                      {description !== undefined ? description.substring(0,200) + "..." : 'No Description Available '}
+                                                   </p>
+                                               </div>
                                         </a>
                                     </div>    
                                     </Col>
