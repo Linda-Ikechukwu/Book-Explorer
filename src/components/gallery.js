@@ -10,7 +10,7 @@ class Gallery extends Component {
                     {
                         
                             this.props.items.map((item, index) => {
-                                let { title, imageLinks, infoLink, description } = item.volumeInfo;
+                                let { title, imageLinks, infoLink, description,authors } = item.volumeInfo;
                                 return (
     
                                     <Col sm="6" md="3">
