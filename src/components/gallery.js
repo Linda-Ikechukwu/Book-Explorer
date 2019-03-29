@@ -8,7 +8,6 @@ class Gallery extends Component {
             <Container className = "gallery">
                 <Row>
                     {
-                        
                             this.props.items.map((item, index) => {
                                 let { title, imageLinks, infoLink, description,authors } = item.volumeInfo;
                                 return (
